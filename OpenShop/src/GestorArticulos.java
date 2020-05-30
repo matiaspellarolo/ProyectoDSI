@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class GestorArticulos
 {
 	public static ArrayList<Articulo> articulos = new ArrayList<Articulo>();
-	private static ArrayList<Articulo> articulosRelevantes = new ArrayList<Articulo>();
+	//private static ArrayList<Articulo> articulosRelevantes = new ArrayList<Articulo>();
 	
 	public static void mostrarArticulosRelevantes()
 	{

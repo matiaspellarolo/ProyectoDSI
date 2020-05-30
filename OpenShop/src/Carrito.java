@@ -10,7 +10,7 @@ public class Carrito
 	private ArrayList<Integer> cantidadArticulo;
 	private MedioPago medioPago;
 	
-	public Carrito(Usuario Usuario)
+	public Carrito(Usuario usuario)
 	{
 		this.usuario = usuario;
 		cantidadArticulos = 0;
@@ -18,6 +18,13 @@ public class Carrito
 		articulos = new ArrayList<Articulo>();
 		cantidadArticulo = new ArrayList<Integer>();
 	}
+	public Usuario getUsuario() {return usuario;}
+	public int getCantidadArticulos() {return cantidadArticulos;}
+	public double getPrecioTotal() {return precioTotal;}
+	public ArrayList<Articulo> getArticulos() {return articulos;}
+	public ArrayList<Integer> getCantidadArticulo() {return cantidadArticulo;}
+	public MedioPago getMedioPago() {return medioPago;}
+	
 	public void agregarArticulo(Articulo articulo)
 	{
 		Scanner input = new Scanner(System.in);
@@ -62,21 +69,25 @@ public class Carrito
 	}
 	public void mostrarCarrito()
 	{
-		int cantidad = 0;
 		System.out.println("ARTÍCULOS DEL CARRITO:");
 		for(int i=0; i<articulos.size(); i++)
 		{
 			System.out.println("- " + articulos.get(i).getNombre() + " x" + cantidadArticulo.get(i) + " - $" + articulos.get(i).getPrecio() + " por unidad.");
-			cantidad += cantidadArticulo.get(i);
 		}
-		
-		System.out.println("CANTIDAD DE ARTÍCULOS: " + cantidad);
+		System.out.println("CANTIDAD DE ARTÍCULOS: " + cantidadArticulos);
 		System.out.println("PRECIO TOTAL: $" + precioTotal);
-		System.out.println(medioPago);
 	}
 	public void asignarMedioPago(MedioPago medioPago)
 	{
 		this.medioPago = medioPago;
 		System.out.println("Medio de pago asignado con éxito.");
+	}
+	public void limpiarCarrito()
+	{
+		
+		cantidadArticulos = 0;
+		precioTotal = 0;
+		articulos.clear();
+		cantidadArticulo.clear();
 	}
 }
