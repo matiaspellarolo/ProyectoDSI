@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_221"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/matia/Google Drive/Universidad/3° AÑO/Diseño de sistemas/10 - Persistencia/Ejemplo/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/matia/Google Drive/Universidad/3° AÑO/Diseño de sistemas/10 - Persistencia/Ejemplo/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
