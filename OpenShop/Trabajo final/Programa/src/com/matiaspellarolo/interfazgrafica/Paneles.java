@@ -1,0 +1,6 @@
+package com.matiaspellarolo.interfazgrafica;
+public enum Paneles
+{
+	INICIO_SESION, PRINCIPAL, VER_STOCK_ACTUAL, AGREGAR_PRODUCTO,
+	MODIFICAR_PRODUCTO_1, MODIFICAR_PRODUCTO_2, ELIMINAR_PRODUCTO;
+}
