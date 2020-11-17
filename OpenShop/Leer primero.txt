@@ -1,0 +1,16 @@
+Dentro de la carpeta "OpenShop" se encuentran dos sub carpetas, una nombrada "Trabajo previo" donde se encuentra todo lo realizado durante el año con respecto al proyecto, y la otra nombrada "Trabajo final" donde se encuentra todo lo realizado para el trabajo final de la materia.
+Dentro de la carpeta trabajo final se encuentra la documentación del Catálogo, los test de aceptación, una carpeta "OpenShop (Proyecto en Java)" donde está el proyecto realizado en java, y otra carpeta "Programa" donde está el archivo ejecutable.
+Junto al archivo ejecutable se encuentra una carpeta llamada "Archivos" que son los distintos json que se requieren para el funcionamiento del programa.
+
+Explicación de la asociación con Despacho: El grupo de Despacho nos manda un json llamado "ProductosDespachados", este debe ir dentro de la carpeta Archivos y siempre tiene que haber uno, porque cada vez que se ejecute el programa, lo primero que se hace es buscar este archivo y leer la lista de productos que fueron vendidos para actualizar el stock, una vez que los lee, se elimina la lista y queda el archivo vacío, de modo que si se vuelve a ejecutar el programa no se vuelvan a descontar los productos del stock. Es importante que siempre esté el archivo porque sino se generaría un error.
+A modo de comprobación, dentro de la carpeta "Prueba" se encuentran dos json que me los pasó un compañero de Despecho, prueben con reemplezar estos json por el que está en "Archivos" (tienen que ponerle bien el nombre lo único) para corroborar la funcionalidad.
+
+El programa está pensado para que sea gestionado por varias personas, por lo que al principio se debe iniciar sesión. Actualmente se cuenta con tres usuarios:
+ - Usuario: matiaspellarolo; Contraseña: 1234.
+ - Usuario: valeriacontarini; Contraseña: 1111.
+ - Usuario: sergioandres; Contraseña: 1122.
+Para ingresar usen uno de estos tres usuarios.
+
+Ante cualquier duda o inquietud comunicarse.
+Saludos!
+Matías Pellarolo.
